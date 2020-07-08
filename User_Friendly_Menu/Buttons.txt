@@ -1,0 +1,5 @@
+# Contents of 'Buttons.txt'
+"ButtonName" "Action"
+
+"Google" "https://www.google.com/"
+"Reddit" "https://www.reddit.com/"
