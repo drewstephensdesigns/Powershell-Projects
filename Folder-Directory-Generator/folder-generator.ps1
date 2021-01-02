@@ -1,12 +1,16 @@
 # Working Directory - Where you want the sub folders to be created at
-# Example: C:\
-$workingdir = ''
-$workingdir2 = ''
+# Example: C:\Users\Default\Desktop
+$workingdir = 'C:\Users\Default\Desktop'
+
+# Delete the "#" if you need an additional folder directory created
+#$workingdir2 = ''
 
 # Text file listing names of the the sub-folders to be created
 # Example: folder-list-one.txt has folder-one through folder-five as folder names
 $products = Get-Content 'folder-list-one.txt'
-$products2 = Get-Content 'folder-list-two.txt'
+
+# Delete the "#" if you need an additional folder directory created
+#$products2 = Get-Content 'folder-list-two.txt'
 
 # These sub folders will be created in the above directory using the calendar months
 $subfolders = @(
@@ -34,7 +38,8 @@ foreach ($product in $products)
         }
 
 }
-
+# Delete the <##> If you need multiple folder directories created
+<#
 foreach ($product2 in $products2) 
 {
     $rootcount = 0
@@ -45,3 +50,4 @@ foreach ($product2 in $products2)
         }
 
 }
+#>
